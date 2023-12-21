@@ -31,7 +31,7 @@ async def participant_check(channel, user_id):
         return False
 
 
-@Mukeshbot(pattern="^/(fsub|Fsub|forcesubscribe|Forcesub|forcesub|Forcesubscribe) ?(.*)")
+@DAXXMUSIC(pattern="^/(fsub|Fsub|forcesubscribe|Forcesub|forcesub|Forcesubscribe) ?(.*)")
 async def fsub(event):
     if event.is_private:
         return
@@ -86,7 +86,7 @@ async def fsub(event):
         await event.reply(f"✅ **ғᴏʀᴄᴇ sᴜʙsᴄʀɪʙᴇ ɪs ᴇɴᴀʙʟᴇᴅ** to @{channel}.")
 
 
-@Mukesh.on(events.NewMessage())
+@DAXXMUSIC.on(events.NewMessage())
 async def fsub_n(e):
     if not db.fs_settings(e.chat_id):
         return
@@ -119,7 +119,7 @@ async def fsub_n(e):
         await e.client.edit_permissions(e.chat_id, e.sender_id, send_messages=False)
 
 
-@Mukeshinline(pattern=r"fs(\_(.*))")
+@DAXXinline(pattern=r"fs(\_(.*))")
 async def unmute_fsub(event):
     user_id = int(((event.pattern_match.group(1)).decode()).split("_", 1)[1])
     if not event.sender_id == user_id:
