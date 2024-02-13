@@ -44,7 +44,7 @@ unmute = ["unmute","speak","free"]
 kick = ["kick", "out","nikaal","nikal"]
 promote = ["promote","adminship","chotadedo"]
 demote = ["demote","lelo"]
-fullpromote = ["fullpromote","fulladmin","puradedo]
+fullpromote = ["fullpromote","fulladmin","puradedo"]
 group = ["group"]
 channel = ["channel"]
 
