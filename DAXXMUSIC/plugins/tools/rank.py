@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pymongo import MongoClient
 from DAXXMUSIC import app
-from config import MONGO_DB
+from config import MONGO_DB_URI as MONGO_DB
 from pyrogram.types import *
 
 
