@@ -1,6 +1,6 @@
 from pyrogram import filters
 from pymongo import MongoClient
-from Natasha import app
+from DAXXMUSIC import app
 from config import MONGO_DB
 from pyrogram.types import *
 
